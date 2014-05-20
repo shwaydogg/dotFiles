@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Applications/AMPPS/www/mff.dev/wp-content/themes/twentyfourteen'
-let g:netrw_dirhist_2='/Applications/AMPPS/www/mff.dev/wp-content/themes/twentyfourteen/page-templates'
-let g:netrw_dirhist_3='/Applications/AMPPS/www/mff.dev/wp-content/themes/twentyfourteen'
-let g:netrw_dirhist_4='/Applications/AMPPS/www/mff.dev/wp-content/themes/twentyfourteen/languages'
-let g:netrw_dirhist_5='/Applications/AMPPS/www/mff.dev/wp-content/themes/twentyfourteen'
-let g:netrw_dirhist_6='/Applications/AMPPS/www/mff.dev/wp-content/themes/twentyfourteen/images'
-let g:netrw_dirhist_7='/Applications/AMPPS/www/mff.dev/wp-content/themes/twentyfourteen'
-let g:netrw_dirhist_8='/Applications/AMPPS/www/mff.dev/wp-content/themes/twentyfourteen/page-templates'
-let g:netrw_dirhist_9='/Applications/AMPPS/www/mff.dev/wp-content/themes/twentyfourteen'
+let g:netrw_dirhist_cnt =0
