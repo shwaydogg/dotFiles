@@ -29,6 +29,7 @@ Plugin 'user/L9', {'name': 'newL9'}
 "Solarized:
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-sensible'
+Bundle 'wavded/vim-stylus'
 "Super power line needs python:
 Bundle 'Lokaltog/powerline'
 
