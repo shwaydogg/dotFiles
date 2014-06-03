@@ -75,3 +75,12 @@ augroup END
 inoremap jk <ESC>
 " Remap kj while in insert mode to ESC
 inoremap kj <ESC>
+
+set ic " Default to case-insensitive search
+set hls " Highlight search options
+set incsearch " Incremental search
+set smartcase " Allow case-sensitive search if there is one uppercase
+
+set cursorline " highlight current line
+
+set scrolloff=5
