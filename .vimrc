@@ -15,21 +15,26 @@ Plugin 'gmarik/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
+"Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+"Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
+"Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
-Plugin 'user/L9', {'name': 'newL9'}
+"Plugin 'user/L9', {'name': 'newL9'}
+
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'groenewege/vim-less'
+Bundle 'scrooloose/nerdtree'
 
 "Solarized:
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-sensible'
 Bundle 'wavded/vim-stylus'
+Bundle 'mustache/vim-mustache-handlebars'
 "Super power line needs python:
 Bundle 'Lokaltog/powerline'
 
@@ -54,3 +59,14 @@ let g:solarized_termcolors=256
 syntax enable
 set background=light
 colorscheme solarized
+
+set expandtab
+set tabstop=2
+set shiftwidth=2    
+  
+" Auto Reload .vimrc http://stackoverflow.com/questions/2400264/is-it-possible-to-apply-vim-configurations-without-restarting/2403926#2403926
+augroup myvimrc
+    au!
+    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+augroup END
+" Auto Reload .vimrc
