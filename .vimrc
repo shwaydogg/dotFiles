@@ -84,3 +84,5 @@ set smartcase " Allow case-sensitive search if there is one uppercase
 set cursorline " highlight current line
 
 set scrolloff=5
+
+set relativenumber " Relative line numbering, remember this is useful for moving quickly: number + movement key.  Can be removed quic by typing :set norelativenumber inorder to copy text
