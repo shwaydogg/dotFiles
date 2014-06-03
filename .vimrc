@@ -70,3 +70,8 @@ augroup myvimrc
     au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
 " Auto Reload .vimrc
+
+"Remap jk while in insert mode to ESC
+inoremap jk <ESC>
+" Remap kj while in insert mode to ESC
+inoremap kj <ESC>
