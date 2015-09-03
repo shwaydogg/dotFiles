@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
+Plugin 'jade.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -32,12 +33,22 @@ Bundle 'scrooloose/nerdtree'
 
 "Solarized:
 Bundle 'altercation/vim-colors-solarized'
+
 Bundle 'tpope/vim-sensible'
 Bundle 'wavded/vim-stylus'
 Bundle 'mustache/vim-mustache-handlebars'
 "Super power line needs python:
 Bundle 'Lokaltog/powerline'
-
+Bundle 'kien/ctrlp.vim' 
+"Did not work without the '.vim'...?
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+"End ctrlp settings
+Bundle 'jlanzarotta/bufexplorer'
+"Bundle 'elzr/vim-json'
+map <c-j> \be
+map F \be
+"Plugin 'kchmck/vim-coffee-script'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -85,4 +96,14 @@ set cursorline " highlight current line
 
 set scrolloff=5
 
-set relativenumber " Relative line numbering, remember this is useful for moving quickly: number + movement key.  Can be removed quic by typing :set norelativenumber inorder to copy text
+set number
+"set relativenumber " Relative line numbering, remember this is useful for moving quickly: number + movement key.  Can be removed quic by typing :set norelativenumber inorder to copy text
+"
+
+"Have ctrlP use git's file listing remove local .gitignores and more git smart filtering:
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+"folding settings
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
