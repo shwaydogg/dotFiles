@@ -44,11 +44,12 @@ Bundle 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 "End ctrlp settings
-Bundle 'jlanzarotta/bufexplorer'
 "Bundle 'elzr/vim-json'
 map <c-j> \be
 map F \be
 "Plugin 'kchmck/vim-coffee-script'
+"Bundle 'jlanzarotta/bufexplorer'
+Bundle 'crookedneighbor/bufexplorer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
