@@ -53,6 +53,10 @@ Bundle 'crookedneighbor/bufexplorer'
  
 Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+"Setup airline buffer tabs not have arrows
+"let g:airline#extensions#tabline#left_sep = ' '   
+"let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
