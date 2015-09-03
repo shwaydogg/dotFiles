@@ -47,7 +47,7 @@ let g:ctrlp_cmd = 'CtrlP'
 "Bundle 'elzr/vim-json'
 map <c-j> \be
 map F \be
-"Plugin 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 "Bundle 'jlanzarotta/bufexplorer'
 Bundle 'crookedneighbor/bufexplorer'
 
