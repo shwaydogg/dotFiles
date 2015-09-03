@@ -38,7 +38,7 @@ Bundle 'tpope/vim-sensible'
 Bundle 'wavded/vim-stylus'
 Bundle 'mustache/vim-mustache-handlebars'
 "Super power line needs python:
-Bundle 'Lokaltog/powerline'
+"Bundle 'Lokaltog/powerline'
 Bundle 'kien/ctrlp.vim' 
 "Did not work without the '.vim'...?
 let g:ctrlp_map = '<c-p>'
