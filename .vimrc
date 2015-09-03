@@ -50,6 +50,9 @@ map F \be
 Plugin 'kchmck/vim-coffee-script'
 "Bundle 'jlanzarotta/bufexplorer'
 Bundle 'crookedneighbor/bufexplorer'
+ 
+Plugin 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
